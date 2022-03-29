@@ -2,11 +2,26 @@
     parte della mail
 */
 
+const mail_list = ["baby.yoda@gmail.com", "pincopallino@gmail.com", "fraccopacco@gmail.com"];
+console.log(mail_list);
+
 //chiedere all'utente la sua mail
 
-//controlla che sia nella lista
+let user_mail = prompt("Inserisci la tua mail");
+console.log(user_mail);
 
-//stampa esito del controllo
+//controlla che sia nella lista
+if (mail_list.includes(user_mail)) {
+
+    //stampa esito del controllo
+    alert("La mail è presente nell'elenco");
+} else {
+    
+    //stampa esito del controllo
+    alert("La mail non è presente nell'elenco");
+}
+
+
 
 
 /* 
